@@ -180,15 +180,38 @@ while dispositivo != "power_off":
                                     os.system("cls")
                                     print("OPÇÂO INVALIDA!")
                                     print()
+                        elif menu3 == "3":
+                            while True:
+                                os.system("cls")
+                                print("PARA SABER O PERIMETRO DE UM TRIANGULO É NECESSARIO INFORMAR 3 VALORES")
+                                print("'Lembrando que um de seus lados deve ser maior que o valor absoluto da diferença dos outros dois lados e menor que a soma dos outros dois lados'")
+                                a = float(input("INFORME O 1° VALOR: "))
+                                b = float(input("INFORME O 2° VALOR: "))
+                                c = float(input("INFORME O 3° VALOR: "))
+                                os.system("cls")
+                                if (a < (b + c) and b < (a + c) and c < (a + b)):
+                                    print("PERIMETRO = {:.1f}".format(a+b+c))
+                                else:
+                                    print("ESSES VALORES NÂO FORMA UM TRIANGULO")
+                                print()
+                                print("Deseja Calcular novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                                option = input("ESCOLHA UMA OPÇÂO: ")
+                                if option == "2" or option == "não":
+                                        os.system("cls")
+                                        break
+                                else:
+                                    os.system("cls")
+                                    print("OPÇÂO INVALIDA!")
+                                    print()
 
-
-                        #elif menu3 == "3":
                         elif menu3 == "4":
                             os.system("cls")
                             while True:
-                                a, b, c = input().split()
-                                a, b, c = float(a), float(b), float(c)
-
+                                print("PARA SABER O TIPO DE UM TRIANGULO É NECESSARIO INFORMAR 3 VALORES")
+                                a = float(input("INFORME O 1° VALOR: "))
+                                b = float(input("INFORME O 2° VALOR: "))
+                                c = float(input("INFORME O 3° VALOR: "))
+                                os.system("cls")
                                 if (a > b) and (a > c):
                                     if (b > c):
                                         a, b, c = a, b, c
@@ -204,25 +227,29 @@ while dispositivo != "power_off":
                                         a, b, c = c, a, b
                                     else:
                                         a, b, c = c, b, a
-
-                                # verificar se forma triangulo
                                 if (a >= b + c):
                                     print('NAO FORMA TRIANGULO')
                                 else:
-                                    # verificar o tipo (ângulo)
                                     if (a ** 2 == b ** 2 + c ** 2):
                                         print('TRIANGULO RETANGULO')
                                     elif (a ** 2 > b ** 2 + c ** 2):
                                         print('TRIANGULO OBTUSANGULO')
                                     else:
                                         print('TRIANGULO ACUTANGULO')
-
-                                    # verificar o tipo (medida)
                                     if (a == b) and (a == c):
                                         print('TRIANGULO EQUILATERO')
                                     elif (a == b) or (a == c) or (b == c):
                                         print('TRIANGULO ISOSCELES')
-
+                                    print()
+                                    print("Deseja Calcular novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                                    option = input("ESCOLHA UMA OPÇÂO: ")
+                                    if option == "2" or option == "não":
+                                        os.system("cls")
+                                        break
+                                    else:
+                                        os.system("cls")
+                                        print("OPÇÂO INVALIDA!")
+                                        print()
                         elif menu3 == "0":
                              os.system("cls")
                              break
