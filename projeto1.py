@@ -2,10 +2,10 @@ import os
 import random
 dispositivo = "power_on"
 while dispositivo != "power_off":
-    print("MENU","[1] CALCULADORA", "[2] JOGOS", "[0] DESLIGAR", sep="\n")
+    print("MENU","[2] CALCULADORA", "[3] JOGOS", "[0] DESLIGAR", sep="\n")
     menu = input("ESCOLHA UMA OPÇÂO: ")
     os.system("cls")
-    if menu == "1":
+    if menu == "2":
         while True:
             print("QUAL TIPO DE CALCULADORA DESEJA USAR?", "[1] BASICA", "[2] AVANÇADA", "[0] VOLTAR", sep="\n")
             menu2 = input("ESCOLHA UMA OPÇÂO: ")
@@ -257,40 +257,58 @@ while dispositivo != "power_off":
                              os.system("cls")
                              print("OPÇÂO INVALIDA!")
                              print()
-                                
-                             
-                 
-                 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            elif menu2 == "2":
-                    os.system("cls")
-                    print("NÂO PRONTO")
             elif menu2 == "0":
                     break
             else:
                 print("OPÇÂO INVALIDA!")
                 print()
+    if menu == "3":
+        while True:
+            print("QUAL JOGO DESEJA JOGAR?", "[1] ADIVINHE O NUMERO", "[2] TABUADA", "[3] JOGO DA VELHA", "[0] VOLTAR", sep="\n")
+            menu2 = input("ESCOLHA UMA OPÇÂO: ")
+            os.system("cls")
+            if menu2 == "1":
+                while True:
+                    print("<< ADIVINHE O NUMERO >>", "EM QUAL DIFICULDADE DESEJA JOGAR?", "[1] FACIL (1 - 25)", "[2] MEDIO (1 - 50)", "[3] DIFICIL (1 - 100)" , "[0] VOLTAR", sep="\n")
+                    menu2 = input("ESCOLHA UMA OPÇÂO: ")
+                    os.system("cls")
+                    if menu2 == "1":
+                        while True:
+                            numeros = random.randint(1, 25)
+                            for i in range(5, -1, -1):
+                                if i == 0:
+                                    os.system("cls")
+                                    print("SUAS TENTAIVAS ACABARAM")
+                                    print("A RESPOSTA CERTA ERA", numeros)
+                                    break
+                                print("Voçe possue {} Tentativas".format(i))
+                                print()
+                                resposta = int(input("DIGITE UM NUMERO: "))
+                                if resposta == numeros:
+                                    os.system("cls")
+                                    print("PARABENS VOÇE ACERTOU ", numeros)
+                                    print()
+                                    break
+                                elif resposta > numeros:
+                                    os.system("cls")
+                                    print(resposta, "É MAIOR QUE O NUMERO")
+                                    print()
+                                elif resposta < numeros:
+                                    os.system("cls")
+                                    print(resposta, "É MENOR QUE O NUMERO")
+                                    print()
+                            print()
+                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            option = input("ESCOLHA UMA OPÇÂO: ")
+                            if option == "1":
+                                os.system("cls")
+                            elif option == "2" or option == "não":
+                                    os.system("cls")
+                                    break
+
+
+
+
 
                     
     if menu == "0":
