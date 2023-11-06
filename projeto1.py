@@ -313,7 +313,7 @@ while dispositivo != "power_off":
                                     print(resposta, "É MENOR QUE O NUMERO")
                                     print()
                             print()
-                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            print("Deseja jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
                             option = input("ESCOLHA UMA OPÇÂO: ")
                             if option == "1":
                                 os.system("cls")
@@ -346,7 +346,7 @@ while dispositivo != "power_off":
                                     print(resposta, "É MENOR QUE O NUMERO")
                                     print()
                             print()
-                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            print("Deseja jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
                             option = input("ESCOLHA UMA OPÇÂO: ")
                             if option == "1":
                                 os.system("cls")
@@ -379,7 +379,7 @@ while dispositivo != "power_off":
                                     print(resposta, "É MENOR QUE O NUMERO")
                                     print()
                             print()
-                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            print("Deseja jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
                             option = input("ESCOLHA UMA OPÇÂO: ")
                             if option == "1":
                                 os.system("cls")
@@ -414,7 +414,7 @@ while dispositivo != "power_off":
                                     print("VOCÊ ERROU A RESPOSTA CERTA É: ", numeros)
                                     print()
                                     break
-                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            print("Deseja jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
                             option = input("ESCOLHA UMA OPÇÂO: ")
                             if option == "1":
                                 os.system("cls")
@@ -441,7 +441,7 @@ while dispositivo != "power_off":
                                     print("VOCÊ ERROU A RESPOSTA CERTA É: ", numeros)
                                     print()
                                     break
-                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            print("Deseja jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
                             option = input("ESCOLHA UMA OPÇÂO: ")
                             if option == "1":
                                 os.system("cls")
@@ -468,7 +468,7 @@ while dispositivo != "power_off":
                                     print("VOCÊ ERROU A RESPOSTA CERTA É: ", numeros)
                                     print()
                                     break
-                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            print("Deseja jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
                             option = input("ESCOLHA UMA OPÇÂO: ")
                             if option == "1":
                                 os.system("cls")
@@ -660,7 +660,7 @@ while dispositivo != "power_off":
                                     print(ta[2][0],ta[2][1],ta[2][2],sep=" | ")
                                     break
                             print()
-                            print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
+                            print("Deseja jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
                             option = input("ESCOLHA UMA OPÇÂO: ")
                             if option == "1":
                                 os.system("cls")
