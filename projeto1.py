@@ -10,26 +10,31 @@ while dispositivo != "power_off":
     os.system("cls")
     if menu == "1":
         while True:
+            print()
             print("QUAL TIPO DE CALCULADORA DESEJA USAR?", "[1] BASICA", "[2] AVANÇADA", "[0] VOLTAR", sep="\n")
             menu2 = input("ESCOLHA UMA OPÇÂO: ")
             os.system("cls")
             if menu2 == "1":
                     while True:
+                        print()
                         print("QUAL TIPO DE CALCULO DESEJA EXECUTAR?", "[1] SOMA", "[2] SUBTRAÇÂO", "[3] DIVISÂO", "[4] MULTIPLICAÇÂO", "[0] VOLTAR", sep="\n")
                         menu3 = input("ESCOLHA UMA OPÇÂO: ")
                         os.system("cls")
                         if menu3 == "1":
                             while True:
+                                print()
                                 quantidade = int(input("QUANTOS NUMEROS VOCE DESEJA SOMAR? "))
                                 if quantidade > 0:
                                     numeros = [0]*quantidade
                                     for i in range(quantidade):
+                                        print()
                                         print("DGIGITE O {} NUMERO DA SOMA:".format((i+1)), end=" ")
                                         numeros[i] = float(input())
                                     calculo = 0
                                     for i in range(quantidade):
                                         calculo += numeros[i]
                                         os.system("cls")
+                                    print()
                                     print("O RESULTADO DA SOMA É: {}".format(calculo))
                                     print()
                                     print("Deseja Somar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
@@ -47,6 +52,7 @@ while dispositivo != "power_off":
                                      print()
                         elif menu3 == "2":
                             while True:
+                                print()
                                 quantidade = int(input("QUANTOS NUMEROS VOCE DESEJA SUBTRAIR? "))
                                 if quantidade > 0:
                                     numeros = [0]*quantidade
@@ -57,6 +63,7 @@ while dispositivo != "power_off":
                                     for i in range(1, quantidade):
                                         calculo -= numeros[i]
                                         os.system("cls")
+                                    print()
                                     print("O RESULTADO DA SUBTRAÇÂO É: {}".format(calculo))
                                     print()
                                     print("Deseja Subitrair novamente? ","[1] SIM", "[2] NÂO", sep="\n")
@@ -70,6 +77,7 @@ while dispositivo != "power_off":
                                         print()
                                 else:
                                      os.system("cls")
+                                     print()
                                      print("DIGITE UM NUMERO A CIMA DE 0")
                                      print()    
                         elif menu3 == "3":
@@ -78,12 +86,14 @@ while dispositivo != "power_off":
                                 if quantidade > 0:
                                     numeros = [0]*quantidade
                                     for i in range(quantidade):
+                                        print()
                                         print("DGIGITE O {} NUMERO DA DIVISÂO:".format((i+1)), end=" ")
                                         numeros[i] = float(input())
                                     calculo = numeros[0]
                                     for i in range(1, quantidade):
                                         calculo = calculo / numeros[i]
                                         os.system("cls")
+                                    print()
                                     print("O RESULTADO DA DIVISÂO É: {}".format(calculo))
                                     print()
                                     print("Deseja Dividir novamente? ","[1] SIM", "[2] NÂO", sep="\n")
@@ -97,10 +107,12 @@ while dispositivo != "power_off":
                                         print()
                                 else:
                                      os.system("cls")
+                                     print()
                                      print("DIGITE UM NUMERO A CIMA DE 0")
                                      print() 
                         elif menu3 == "4":
                             while True:
+                                print()
                                 quantidade = int(input("QUANTOS NUMEROS VOCE DESEJA MULTIPLICAR? "))
                                 if quantidade > 0:
                                     numeros = [0]*quantidade
@@ -284,12 +296,12 @@ while dispositivo != "power_off":
                                     print("SUAS TENTAIVAS ACABARAM")
                                     print("A RESPOSTA CERTA ERA", numeros)
                                     break
-                                print("Voçe possue {} Tentativas".format(i))
+                                print("Você possui {} Tentativas".format(i))
                                 print()
                                 resposta = int(input("DIGITE UM NUMERO: "))
                                 if resposta == numeros:
                                     os.system("cls")
-                                    print("PARABENS VOÇE ACERTOU ", numeros)
+                                    print("PARABENS  ACERTOU ", numeros)
                                     print()
                                     break
                                 elif resposta > numeros:
@@ -317,12 +329,12 @@ while dispositivo != "power_off":
                                     print("SUAS TENTAIVAS ACABARAM")
                                     print("A RESPOSTA CERTA ERA", numeros)
                                     break
-                                print("Voçe possue {} Tentativas".format(i))
+                                print(" possui {} Tentativas".format(i))
                                 print()
                                 resposta = int(input("DIGITE UM NUMERO: "))
                                 if resposta == numeros:
                                     os.system("cls")
-                                    print("PARABENS VOÇE ACERTOU ", numeros)
+                                    print("PARABENS VOCÊ ACERTOU ", numeros)
                                     print()
                                     break
                                 elif resposta > numeros:
@@ -350,12 +362,12 @@ while dispositivo != "power_off":
                                     print("SUAS TENTAIVAS ACABARAM")
                                     print("A RESPOSTA CERTA ERA", numeros)
                                     break
-                                print("Voçe possue {} Tentativas".format(i))
+                                print("Você possui {} Tentativas".format(i))
                                 print()
                                 resposta = int(input("DIGITE UM NUMERO: "))
                                 if resposta == numeros:
                                     os.system("cls")
-                                    print("PARABENS VOÇE ACERTOU ", numeros)
+                                    print("PARABENS VOCÊ ACERTOU ", numeros)
                                     print()
                                     break
                                 elif resposta > numeros:
@@ -387,7 +399,7 @@ while dispositivo != "power_off":
                             acertos = 0
                             for i in range(1, 7):
                                 if i == 6:
-                                    print("PARABENS VOÇE VENCEU!")
+                                    print("PARABENS VOCÊ VENCEU!")
                                     print()
                                     break
                                 numero1 = random.randint(25, 99)
@@ -399,7 +411,7 @@ while dispositivo != "power_off":
                                 resposta = int(input())
                                 os.system("cls")
                                 if resposta != numeros:
-                                    print("VOÇE ERROU A RESPOSTA CERTA É: ", numeros)
+                                    print("VOCÊ ERROU A RESPOSTA CERTA É: ", numeros)
                                     print()
                                     break
                             print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
@@ -414,7 +426,7 @@ while dispositivo != "power_off":
                             acertos = 0
                             for i in range(1, 7):
                                 if i == 6:
-                                    print("PARABENS VOÇE VENCEU!")
+                                    print("PARABENS VOCÊ VENCEU!")
                                     print()
                                     break
                                 numero1 = random.randint(25, 99)
@@ -426,7 +438,7 @@ while dispositivo != "power_off":
                                 resposta = float(input())
                                 os.system("cls")
                                 if resposta != numeros:
-                                    print("VOÇE ERROU A RESPOSTA CERTA É: ", numeros)
+                                    print("VOCÊ ERROU A RESPOSTA CERTA É: ", numeros)
                                     print()
                                     break
                             print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
@@ -441,7 +453,7 @@ while dispositivo != "power_off":
                             acertos = 0
                             for i in range(1, 7):
                                 if i == 6:
-                                    print("PARABENS VOÇE VENCEU!")
+                                    print("PARABENS VOCÊ VENCEU!")
                                     print()
                                     break
                                 numero1 = random.randint(25, 99)
@@ -453,7 +465,7 @@ while dispositivo != "power_off":
                                 resposta = int(input())
                                 os.system("cls")
                                 if resposta != numeros:
-                                    print("VOÇE ERROU A RESPOSTA CERTA É: ", numeros)
+                                    print("VOCÊ ERROU A RESPOSTA CERTA É: ", numeros)
                                     print()
                                     break
                             print("Deseja Jogar novamente? ","[1] SIM", "[2] NÂO", sep="\n")
