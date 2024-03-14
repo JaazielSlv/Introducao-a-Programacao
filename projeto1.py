@@ -2,7 +2,6 @@
 #E tambem pouco conhecimentos em funções. 
 
 import os 
-# PARA LIMPAR A LINHA DE COMANDO COM   os.system("cls")
 import random
 dispositivo = "power_on"
 while dispositivo != "power_off":
