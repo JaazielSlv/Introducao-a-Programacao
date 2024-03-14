@@ -1,4 +1,4 @@
-#Esse codigo foi feito por mim quando estava aprendendo a Introdução a programação não tinha conhecimentto de class e Objetos. 
+#Esse codigo foi feito por mim quando estava aprendendo a Introdução a programação não tinha conhecimentto de class e Orientação de objetos. 
 #E tambem pouco conhecimentos em funções. 
 
 import os 
